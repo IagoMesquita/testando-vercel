@@ -1,9 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const [count, setCount] = useState(0);
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,7 +25,13 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <div className={styles.card}>
             <h2>Documentation &rarr;</h2>
-            <p>Vou atualizar aqui para receber um contador.</p>
+            <p>Contador:</p>
+            <div className={ styles.card}>
+              <button>-</button>
+              {count}
+              <button>+</button>
+
+            </div>
           </div>
 
         </div>
