@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <div className={styles.card}>
             <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Vou atualizar aqui para receber um contador.</p>
           </div>
 
         </div>
